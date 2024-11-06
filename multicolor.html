@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation and Transforms</title>
+    <style>
+        .slide{
+            background-color: aqua;
+            border: 10px solid blueviolet;
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            border-radius: 200px;
+        }
+        .slide{
+            animation-name: sliding;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes sliding{
+            0%{
+                background-color: blue;
+                border: 5px solid purple;
+                transform: translate(0px,0px);
+
+            }
+            25%{
+                background-color:green;
+                border: 5px solid peru;
+                transform: translate(120px,0px);
+
+            }
+            50%{
+                background-color:orangered;
+                border: 5px solid grey;
+                transform: translate(120px,120px);
+
+            }
+            75%{
+                background-color:yellowgreen;
+                border: 5px solid black;
+                transform: translate(0px,120px);
+
+            }
+            100%{
+                background-color: brown;
+                border: 5px solid darkred;
+                transform: translate(0px,0px);
+
+            }
+            to{
+                background-color: tomato;
+                border: 5px solid hotpink;
+                transform: translate(120px);
+
+            }
+        }
+        .tr{
+            border: 5px solid black;
+            height: 100%;
+            width: 100px;
+            background-color: blueviolet;
+            transform: skew(60deg);
+        }
+
+    </style>
+
+</head>
+<body>
+    <p class="slide"></p>
+    
+</body>
+</html>

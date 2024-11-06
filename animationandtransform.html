@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation and Transforms</title>
+    <style>
+        .slide{
+            background-color: aqua;
+            border: 10px solid blueviolet;
+            height: 200px;
+            width: 250px;
+            background-color: aquamarine;
+        }
+        .slide{
+            animation-name: sliding;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes sliding{
+            from{
+                background-color: blue;
+                border: 5px solid grey;
+                transform: translate(0px);
+
+            }
+            to{
+                background-color: tomato;
+                border: 5px solid hotpink;
+                transform: translate(120px);
+
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <p class="slide"></p>
+    
+</body>
+</html>
